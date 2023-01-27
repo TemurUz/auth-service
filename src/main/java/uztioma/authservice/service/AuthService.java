@@ -8,14 +8,14 @@ import uztioma.authservice.payload.reuest.SignupRequest;
 public interface AuthService {
 
     /**
-     *
-     * @param loginRequest
+     * Authenticate do user
+     * @param loginRequest checking element parameters
      * @return {@code JwtResponse}
      */
     JwtResponse authenticateUser(LoginRequest loginRequest);
 
     /**
-     *
+     * User registration function
      * @param signupRequest element to be added to this set
      * @return {@code MessageResponse}
      */

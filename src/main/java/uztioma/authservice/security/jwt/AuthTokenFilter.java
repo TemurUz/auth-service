@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
-import uztioma.authservice.security.service.UserDetailsServiceImpl;
+import uztioma.authservice.service.service.UserDetailsServiceImpl;
 
 import java.io.IOException;
 

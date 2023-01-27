@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
-import uztioma.authservice.security.service.UserDetailsImpl;
+import uztioma.authservice.service.service.UserDetailsImpl;
 
 import java.time.Instant;
 import java.util.Date;

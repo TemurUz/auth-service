@@ -1,7 +1,6 @@
 package uztioma.authservice.service.impl;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -19,7 +18,7 @@ import uztioma.authservice.payload.reuest.SignupRequest;
 import uztioma.authservice.repository.RoleRepository;
 import uztioma.authservice.repository.UserRepository;
 import uztioma.authservice.security.jwt.JwtUtils;
-import uztioma.authservice.security.service.UserDetailsImpl;
+import uztioma.authservice.service.service.UserDetailsImpl;
 import uztioma.authservice.service.AuthService;
 
 import java.util.HashSet;

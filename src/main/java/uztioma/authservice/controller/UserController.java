@@ -9,14 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 import uztioma.authservice.entity.User;
 import uztioma.authservice.repository.UserRepository;
 
-import java.util.List;
 import java.util.Optional;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/api/test")
+@RequestMapping("/api/user")
 @RequiredArgsConstructor
-public class TestController {
+public class UserController {
     private final UserRepository userRepository;
     @GetMapping("/all")
     public String allAccess() {
