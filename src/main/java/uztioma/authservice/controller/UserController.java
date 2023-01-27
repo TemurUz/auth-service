@@ -1,6 +1,7 @@
 package uztioma.authservice.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,19 +10,21 @@ import org.springframework.web.bind.annotation.RestController;
 import uztioma.authservice.entity.User;
 import uztioma.authservice.repository.UserRepository;
 
-import java.util.Optional;
+import java.util.List;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/user")
 @RequiredArgsConstructor
 public class UserController {
+
     private final UserRepository userRepository;
+
     @GetMapping("/all")
-    public String allAccess() {
-        Optional<User> mod = userRepository.findByUsername("mod");
-        System.out.println(mod.get());
-        return "Public Content.";
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<?> allAccess() {
+        List<User> all = userRepository.findAll();
+        return ResponseEntity.ok(all);
     }
 
     @GetMapping("/user")

@@ -18,7 +18,7 @@ import uztioma.authservice.payload.reuest.SignupRequest;
 import uztioma.authservice.repository.RoleRepository;
 import uztioma.authservice.repository.UserRepository;
 import uztioma.authservice.security.jwt.JwtUtils;
-import uztioma.authservice.service.service.UserDetailsImpl;
+import uztioma.authservice.security.service.UserDetailsImpl;
 import uztioma.authservice.service.AuthService;
 
 import java.util.HashSet;

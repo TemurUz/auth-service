@@ -15,7 +15,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import uztioma.authservice.security.jwt.AuthEntryPointJwt;
 import uztioma.authservice.security.jwt.AuthTokenFilter;
-import uztioma.authservice.service.service.UserDetailsServiceImpl;
+import uztioma.authservice.security.service.UserDetailsServiceImpl;
 
 @Configuration
 @EnableGlobalMethodSecurity(

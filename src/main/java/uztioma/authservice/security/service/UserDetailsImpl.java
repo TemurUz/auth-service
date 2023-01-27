@@ -1,4 +1,4 @@
-package uztioma.authservice.service.service;
+package uztioma.authservice.security.service;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
