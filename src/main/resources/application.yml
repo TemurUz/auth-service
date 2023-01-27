@@ -1,0 +1,21 @@
+server:
+  port: 8188
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/my_auth_service
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+tioma:
+  app:
+   jwtSecret: temurmaliknomozovsdkjfgsdjvcxcnvbvdlkh,mvcx=_w9wJdhsAAjsjJDkl=@@@@%%%c,.v.js,jfk
+   jwtExpirationMs: 864000001
