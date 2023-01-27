@@ -69,7 +69,7 @@ public class WebSecurityConfig {
                 .and()
                 .authorizeHttpRequests()
                 .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/api/test/**").permitAll()
+                .requestMatchers("/api/user/**").permitAll()
                 .anyRequest().authenticated() .and().csrf().disable();
 
         http.authenticationProvider(authenticationProvider());

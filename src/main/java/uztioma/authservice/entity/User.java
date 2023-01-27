@@ -3,6 +3,7 @@ package uztioma.authservice.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,8 +14,9 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
 @Data
+@Entity
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(	name = "users",
